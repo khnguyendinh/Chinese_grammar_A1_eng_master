@@ -1,0 +1,35 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+
+    <!--Menu navigation view-->
+    <dimen name="header_menu_text_size">16sp</dimen>
+    <dimen name="sub_header_menu_text_sire">16sp</dimen>
+    <dimen name="txt_menu_title_margin">20dp</dimen>
+    <dimen name="common_padding">5dp</dimen>
+    <dimen name="txt_header_text_sire">20sp</dimen>
+    <dimen name="img_width_size">45dp</dimen>
+    <dimen name="img_tet_sms_width_size">45dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="header_height">150dp</dimen>
+    <dimen name="content_padding">15dp</dimen>
+    <dimen name="header_text_size">30sp</dimen>
+    <dimen name="sub_header_text_size">16sp</dimen>
+
+    <dimen name="common_margin">5dp</dimen>
+
+    // Main fragment
+    <dimen name="grammar_title_text_size">18sp</dimen>
+    <dimen name="devider_margin_left">50dp</dimen>
+    <dimen name="list_item_padding">10dp</dimen>
+    // Fragment main
+    <dimen name="txt_content_title">18sp</dimen>
+    <dimen name="txt_content_detail">16sp</dimen>
+
+    // Splash screen
+    <dimen name="splash_ic_text_size">32sp</dimen>
+    <dimen name="btn_main_text_size">18sp</dimen>
+
+</resources>

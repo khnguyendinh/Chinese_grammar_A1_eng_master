@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'grammara1'
+            keyPassword '20073699tt2'
+            storeFile file('H:/Android/Chinese-grammar A1-eng-master/keystore/Chinese_Grammar_A1.jks')
+            storePassword '20073699tt2'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.lamstudio.chinese.grammar"
+        minSdkVersion 17
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:25.0.0'
+    compile 'com.android.support:design:23.1.0'
+    compile 'com.google.android.gms:play-services:8.3.0'
+    compile 'com.google.android.gms:play-services-ads:8.3.0'
+    compile 'com.mcxiaoke.volley:library-aar:1.0.0'
+    compile 'com.google.code.gson:gson:2.8.0'
+}

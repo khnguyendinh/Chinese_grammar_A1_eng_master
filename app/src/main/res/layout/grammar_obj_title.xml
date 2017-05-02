@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border4blue"
+    android:clickable="false"
+    android:padding="@dimen/list_item_padding"
+    android:focusable="false">
+
+    <ImageView
+        android:id="@+id/favourite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/grammar_icon" />
+    <ImageView
+        android:id="@+id/next_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/common_margin"
+        android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+    <TextView
+        android:id="@+id/txt_lesson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/next_icon"
+        android:layout_marginLeft="@dimen/list_item_padding"
+        android:layout_toRightOf="@+id/favourite"
+        android:text="Lesson"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/grammar_title_text_size"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/txt_story_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/next_icon"
+        android:layout_below="@id/txt_lesson"
+        android:layout_marginLeft="@dimen/list_item_padding"
+        android:layout_toRightOf="@+id/favourite"
+        android:text="is thay your answer?"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/grammar_title_text_size"
+        android:textStyle="normal" />
+
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tab_text_color">@android:color/white</color>
+    <color name="tab_background">#009688</color>
+    <color name="header_color">#052b25</color>
+    <color name="colorInforTitle">#34cdde</color>
+    <color name="cover_background">#2196F3</color>
+    <color name="border_color">#44000000</color>
+
+    <color name="selected_layout_bg">#11000000</color>
+    <color name="check_box_color">#009688</color>
+
+    <color name="toolbar_color">#32bea6</color>
+    <color name="toolbar_color_2">#225489</color>
+    <color name="accent_color">#C62828</color>
+    <color name="accent">#052b25</color>
+    <color name="my_awesome_color">#052b25</color>
+    <color name="my_awesome_darker_color">#052b25</color>
+
+    <color name="ColorPrimary">#052b25</color>
+    <color name="ColorPrimaryDark">#052b25</color>
+    <color name="transparent">#00000000</color>
+
+</resources>

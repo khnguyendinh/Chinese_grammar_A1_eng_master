@@ -1,0 +1,4 @@
+ keyAlias 'JPLT Quiz'
+            keyPassword '@quyle91'
+            storeFile file('D:/Hieu/jlpt n1n5/keystore/keystore.jks')
+            storePassword '@quyle91'
