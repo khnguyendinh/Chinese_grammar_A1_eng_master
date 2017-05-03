@@ -5,7 +5,7 @@ android {
         config {
             keyAlias 'grammara1'
             keyPassword '20073699tt2'
-            storeFile file('H:/Android/Chinese-grammar A1-eng-master/keystore/Chinese_Grammar_A1.jks')
+            storeFile file('H:/Android/keystore Chines/Chinese_Grammar_A1.jks')
             storePassword '20073699tt2'
         }
     }
@@ -15,8 +15,8 @@ android {
         applicationId "com.lamstudio.chinese.grammar"
         minSdkVersion 17
         targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.0.1"
     }
     buildTypes {
         release {
