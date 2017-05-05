@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.database.SQLException;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -63,14 +64,17 @@ public class GrammarDetailActivity extends AppCompatActivity implements Rewarded
         grId = getIntent().getIntExtra(Constant.KEY_ID, 0);
         mGHelper = new GrammarDBHelper(GrammarDetailActivity.this);
         displayTitle();
+        Log.d(TAG, "onCreate: ");
     }
+
+
 
     public void initView() {
         mGrammarObjTitle = (TextView) findViewById(R.id.txt_grammar_title);
         toolbar = (Toolbar) findViewById(R.id.tool_bar);
         setSupportActionBar(toolbar);
-        toolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
-        toolbar.setBackgroundColor(getResources().getColor(R.color.my_awesome_color));
+        toolbar.setTitleTextColor(ContextCompat.getColor(GrammarDetailActivity.this, android.R.color.white));
+        toolbar.setBackgroundColor(ContextCompat.getColor(GrammarDetailActivity.this, R.color.my_awesome_color));
         toolbar.setNavigationIcon(R.drawable.ic_arrow_back_white_24dp);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
@@ -185,6 +189,7 @@ public class GrammarDetailActivity extends AppCompatActivity implements Rewarded
         if (mGHelper != null) {
             mGHelper.close();
         }
+        Log.d(TAG, "onDestroy: ");
         super.onDestroy();
     }
 
@@ -201,6 +206,7 @@ public class GrammarDetailActivity extends AppCompatActivity implements Rewarded
         if (DataApp.getInstance().num_Video_Ads < DataApp.getInstance().inforAds.getNumvideo()) {
             DataApp.getInstance().num_Video_Ads++;
             if (mRewardedVideoAd.isLoaded()) {
+                DataApp.getInstance().justShowVideo = true;
                 mRewardedVideoAd.show();
             }
         }
