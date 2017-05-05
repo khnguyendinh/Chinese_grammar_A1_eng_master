@@ -25,7 +25,7 @@ import java.util.Date;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     public static String TAG = MainActivity.class.getSimpleName();
     private AdView mBannerAdView;
-
+    //add mainbranch
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
