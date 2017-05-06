@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">A1 Chinese Grammar</string>
+    <string name="action_settings">Cài đặt</string>
+    <string name="favorite">Yêu thích</string>
+    <string name="grammar">NGỮ PHÁP</string>
+    <string name="header_title">Ngữ pháp Trung quốc A1</string>
+    <string name="history">Lịch sử</string>
+    <string name="more">THÊM ỨNG DỤNG</string>
+    <string name="more_app">Thêm App</string>
+    <string name="rate">Đánh giá</string>
+    <string name="rate_me">ĐÁNH GIÁ</string>
+    <string name="search">Tìm Kiếm</string>
+    <string name="share">Chia sẻ</string>
+    <string name="support">Hỗ trợ</string>
+    <string name="lesson">Bài</string>
+</resources>

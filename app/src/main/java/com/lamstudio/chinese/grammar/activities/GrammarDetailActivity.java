@@ -152,7 +152,7 @@ public class GrammarDetailActivity extends AppCompatActivity implements Rewarded
         }
         Log.e(TAG, "--------Grammar id got ---> " + grId);
         grammarObj = mGHelper.selectGrammarObjById(grId);
-        mGrammarObjTitle.setText("Lesson " + grId + " " + grammarObj.getTitle());
+        mGrammarObjTitle.setText(this.getString(R.string.lesson)+" " + grId + " " + grammarObj.getTitle());
         webView.loadUrl("file:///android_asset/grammar/grammar_" + grId + ".html");
         webView.setWebViewClient(new WebViewClient() {
 
