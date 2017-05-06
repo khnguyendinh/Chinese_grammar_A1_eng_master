@@ -14,4 +14,11 @@
     <string name="share">Chia sẻ</string>
     <string name="support">Hỗ trợ</string>
     <string name="lesson">Bài</string>
+    <string name="banner_bottom_ad_id">Laboratory</string>
+    <string name="full_ad_id">ca-app-pub-7238758076685505/7857052677</string>
+    <string name="sub_header_title">\t ( Cn- En )</string>
+    <string name="video_full_ad_id">ca-app-pub-7238758076685505/9333785878</string>
+    <string name="sample_title">～なり</string>
+    <string name="hello_world">Xin Chào</string>
+    <string name="btn_share_app">Chia sẻ</string>
 </resources>
