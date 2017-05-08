@@ -6,6 +6,7 @@ import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import com.lamstudio.chinese.grammar.object.GrammarObj;
 import com.lamstudio.chinese.grammar.util.Constant;
@@ -24,7 +25,7 @@ public class GrammarDBHelper extends SQLiteOpenHelper {
     static String DATABASE_PATH = "/data/data/com.lamstudio.chinese.grammar/databases/";
 //    static String DATABASE_NAME = "nguphapdb.sqlite";
     static String DATABASE_NAME = "nguphapdb_korea.sqlite";
-    static int DATABASE_VERSION = 1;
+    static int DATABASE_VERSION = 2;
     private SQLiteDatabase myDataBase;
     private final Context mContext;
     private GrammarLikeHelper mLikeHelper;
@@ -91,6 +92,8 @@ public class GrammarDBHelper extends SQLiteOpenHelper {
             } finally {
                 this.close();
             }
+        }else {
+            Log.d("GrammarDB", "createDataBase else " );
         }
     }
 
